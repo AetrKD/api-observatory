@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.vercel/
+.turso/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+devpost/learner-profile.md
+대화내용.md
+.DS_Store
