@@ -4,7 +4,9 @@
 
 API Observatory turns a GitHub repository into an overview of its API connections. Explore detected calls in a two-pane dashboard, find the code behind each request, and inspect real HTTP responses from endpoints you configure.
 
-The interface is available in **English and Korean**.
+**Live app:** [api-observatory.vercel.app](https://api-observatory.vercel.app/)
+
+The interface is available in **English and Korean**. Sign in with GitHub to access your saved repositories and analysis results.
 
 ## What you can do
 
@@ -58,7 +60,16 @@ Repository code is read, **never executed**. Static analysis cannot resolve ever
 
 ## Project status
 
-This repository contains a working prototype and Vercel deployment configuration. **A public hosted application and hosted daily cron execution have not yet been verified.**
+The application is deployed to **Vercel Production** at [api-observatory.vercel.app](https://api-observatory.vercel.app/).
+
+Production verification on **October 27, 2026 (Korea time)** confirmed:
+
+- GitHub sign-in and restoration of existing saved repositories from Turso.
+- A fresh analysis of `bradtraversy/50projects50days`: **103 files scanned, four API calls detected**, with source-file and function details.
+- An actual JSON GET response from the configured example API: **HTTP 200**.
+- Account data and the cron endpoint require authentication.
+
+The source passed **66 automated tests** and TypeScript checks; five integration tests were skipped in that regular test run. The production build completed successfully. A runtime error scan after these checks returned no matching errors. **A scheduled daily cron invocation has not yet been observed.**
 
 The daily schedule is configured for **00:00 UTC** for enabled individual check targets. Automatic response checks when opening a project are a separate feature. Organization/team workspaces are outside the current scope.
 
