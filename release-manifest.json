@@ -50,8 +50,8 @@
     },
     {
       "path": "devpost/ship.md",
-      "bytes": 1342,
-      "sha256": "aa63e70cb342ddbdb9a23a2493ac80a7b457909fd2390b7d5de4db75cca40a7c"
+      "bytes": 1534,
+      "sha256": "5b1a9880a4ecdab47d57eb30c84176fb32ec9be4fc5e4f562a0ab09a690eef4a"
     },
     {
       "path": "devpost/spec.md",
@@ -483,5 +483,7 @@
       "bytes": 145,
       "sha256": "c8d176e22b896ab1afaf695d32beb5e219b7a35f3f7c8af7cf05fd883df52882"
     }
-  ]
+  ],
+  "publicRepository": "https://github.com/AetrKD/api-observatory",
+  "applicationPublicationCommit": "828442dff91d05cf9e6fc920c2c3e3a7594cc111"
 }

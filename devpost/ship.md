@@ -5,7 +5,8 @@
 - [x] Original history reviewed: 271 Git blobs scanned for major credential patterns; none matched. Personal learning-profile content exists in original history, so that history is excluded from this standalone snapshot.
 - [x] Explicit participant approval to create and publish AetrKD/api-observatory.
 - [x] Public repository created: https://github.com/AetrKD/api-observatory.
-- [ ] Anonymous verification of the final public repository URL.
+- [x] Anonymous verification of https://github.com/AetrKD/api-observatory: page and commit archive both returned HTTP 200; all 97 published files matched the prepared snapshot.
+- [x] Application publication commit: 828442dff91d05cf9e6fc920c2c3e3a7594cc111.
 - [ ] Participant-created demo recording and a public YouTube/Vimeo URL.
 - [ ] Participant-written submission fields and exit survey.
 - [ ] Participant-authorized final Devpost submission.
