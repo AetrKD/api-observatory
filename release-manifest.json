@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "ab2952b332f8fa0f693741754495c88c5a7e280e",
+  "sourceCommit": "6682df35d8dbbecf87393d0da2a1e47ca96f7847",
   "historyIncluded": false,
   "verifiedUnmodifiedCodeFiles": 83,
   "files": [
@@ -180,8 +180,8 @@
     },
     {
       "path": "src/app/api/session/route.ts",
-      "bytes": 866,
-      "sha256": "bf606c434a4e4b5d50477ae29ff6b8f2ef61ad5d34f508f60f9c38f389282056"
+      "bytes": 876,
+      "sha256": "28d5b2c93bcc988364edb8cf3cd997d3cc0456d572edb867d36793013c4d4caf"
     },
     {
       "path": "src/app/api/settings/route.ts",
@@ -190,8 +190,8 @@
     },
     {
       "path": "src/app/globals.css",
-      "bytes": 31754,
-      "sha256": "8ac4f6ae8e98e5821a60b56213d19d9617bbf07bde26357381f72ab5d5e3063c"
+      "bytes": 31749,
+      "sha256": "9664812baf5a2f5e6d59e273a3515d2ae272e0d4b7493edf6d95998dea806870"
     },
     {
       "path": "src/app/layout.tsx",
@@ -200,13 +200,13 @@
     },
     {
       "path": "src/app/page.tsx",
-      "bytes": 31701,
-      "sha256": "14806445c03bc928c148b3621d4771fbddf5cc00b8da3f747df251fd4eba60b1"
+      "bytes": 31697,
+      "sha256": "73f9363edb966e27418c08f0ecde3557ce3111de9f1d052b69eb6abb14f3a21f"
     },
     {
       "path": "src/components/account-workspace.tsx",
-      "bytes": 23258,
-      "sha256": "df7b59b86ece27d1ecb2df8644c86122e586244cd47c8750d61a6fc7f07a60d6"
+      "bytes": 23254,
+      "sha256": "a21d10d0bb9804f2f50fc1f2c5ffc2db6556de08535367d642ae66a9d9901296"
     },
     {
       "path": "src/components/analysis-progress.tsx",
@@ -360,8 +360,8 @@
     },
     {
       "path": "src/lib/server/auth.ts",
-      "bytes": 2228,
-      "sha256": "b3531ad132d914a43cc4d89e0163a7e33aff0e2474a77a6f9335f929035b8d65"
+      "bytes": 2385,
+      "sha256": "083392049b39dd7669a09566193d96eb99456279eed7b1b0eb7aabb04cb2f5e0"
     },
     {
       "path": "src/lib/server/config.ts",
@@ -485,5 +485,6 @@
     }
   ],
   "publicRepository": "https://github.com/AetrKD/api-observatory",
-  "applicationPublicationCommit": "828442dff91d05cf9e6fc920c2c3e3a7594cc111"
+  "applicationPublicationCommit": "828442dff91d05cf9e6fc920c2c3e3a7594cc111",
+  "accountDisplay": "GitHub profile display name; email omitted from display-session response"
 }

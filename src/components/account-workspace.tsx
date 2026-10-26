@@ -16,7 +16,7 @@ export type Repository = {
 };
 type Preferences = { analyze_on_add: boolean; daily_checks_enabled: boolean };
 type Session = {
-  user: { id: string; email: string } | null;
+  user: { id: string; name: string } | null;
   missing: string[];
   databaseReady?: boolean;
   installationUrl?: string;
@@ -59,7 +59,7 @@ export function AccountWorkspace({
   onSignedIn: (active: boolean) => void;
   onRepositories: (repos: Repository[]) => void;
   onAccount: (state: {
-    email: string;
+    name: string;
     ready: boolean;
     error: string;
     busy: boolean;
@@ -194,7 +194,7 @@ export function AccountWorkspace({
   }, [repos, onRepositories]);
   useEffect(() => {
     onAccount({
-      email: session?.user?.email ?? "",
+      name: session?.user?.name ?? "",
       ready: Boolean(
         session && session.databaseReady && !session.missing.length,
       ),

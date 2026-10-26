@@ -24,7 +24,12 @@ function createAuth() {
     plugins: [nextCookies()],
   });
 }
-export type AppUser = { id: string; email: string; githubId: string };
+export type AppUser = {
+  id: string;
+  email: string;
+  githubId: string;
+  name?: string;
+};
 export async function currentUser(): Promise<AppUser> {
   const session = await getAuth().api.getSession({ headers: await headers() });
   if (!session) throw new AppError("GitHub 로그인이 필요합니다.", 401);
@@ -36,6 +41,10 @@ export async function currentUser(): Promise<AppUser> {
   return {
     id: session.user.id,
     email: session.user.email,
+    name:
+      session.user.name?.trim() && !session.user.name.includes("@")
+        ? session.user.name.trim()
+        : "GitHub",
     githubId: identity.accountId,
   };
 }

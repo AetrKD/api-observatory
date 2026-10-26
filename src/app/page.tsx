@@ -32,7 +32,7 @@ function WorkspacePage() {
     [repos, setRepos] = useState<Repository[]>([]),
     [historyQuery, setHistoryQuery] = useState(""),
     [account, setAccount] = useState({
-      email: "",
+      name: "",
       ready: false,
       busy: false,
       error: "",
@@ -274,8 +274,8 @@ function WorkspacePage() {
               </button>
             </div>
             {signedIn && (
-              <span className="account-email" title={account.email}>
-                {account.email}
+              <span className="account-name" title={account.name}>
+                {account.name}
               </span>
             )}
             <button

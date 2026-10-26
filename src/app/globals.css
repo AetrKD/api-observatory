@@ -926,7 +926,7 @@ body:has(.repository-dialog[open]) {
   background: var(--line);
   color: var(--text);
 }
-.account-email {
+.account-name {
   max-width: 190px;
   white-space: nowrap;
   overflow: hidden;
@@ -1045,7 +1045,7 @@ body:has(.repository-dialog[open]) {
   .topbar-tools {
     gap: 8px;
   }
-  .account-email {
+  .account-name {
     max-width: 140px;
   }
 }
@@ -1092,7 +1092,7 @@ body:has(.repository-dialog[open]) {
   .topbar-tools {
     width: 100%;
   }
-  .account-email {
+  .account-name {
     flex: 1;
     max-width: none;
   }
@@ -1288,7 +1288,7 @@ summary:focus-visible {
   color: #8695b3;
 }
 .muted,
-.account-email,
+.account-name,
 .support,
 .snapshot,
 .notes,
@@ -1449,7 +1449,7 @@ dt,
   .topbar-tools {
     gap: 12px;
   }
-  .account-email {
+  .account-name {
     order: 3;
     flex-basis: 100%;
   }

@@ -12,7 +12,7 @@ export async function GET() {
   try {
     const user = await currentUser();
     return json({
-      user: { id: user.id, email: user.email },
+      user: { id: user.id, name: user.name || "GitHub" },
       missing,
       databaseReady,
       installationUrl: process.env.GITHUB_APP_SLUG
